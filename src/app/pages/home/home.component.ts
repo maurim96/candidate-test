@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     {
       index: 2,
       title: 'Complete the Taskboard Logic',
-      linkToPage: '\'/taskboard\'',
+      linkToPage: '/taskboard',
       content: 'Navigate to the taskboard page and complete the logic as described in this ticket.',
     },
     {
@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     {
       index: 5,
       title: 'Add Temperature to Header',
-      linkToPage: '/weather',
+      linkToPage: '\'/weather\'',
       content: 'Use the openweathermap.org api to show the latest weather information for New York, New York.',
     },
   ];

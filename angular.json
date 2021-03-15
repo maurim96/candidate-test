@@ -119,8 +119,13 @@
               "devServerTarget": "sfgp-test-skeleton:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "sfgp-test-skeleton"
 }
