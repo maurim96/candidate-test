@@ -8,7 +8,7 @@ Visit the [GitHub page](https://safeguardprvcy.github.io/candidate-test) to see 
 
 ## Fork This Project
 
-Fork this project into your local github so you can work with the code directly.
+Fork this project and work with the code directly.
 
 ## Development server
 

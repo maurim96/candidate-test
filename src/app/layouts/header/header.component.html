@@ -7,7 +7,7 @@
 
   <ul class="menu-items">
     <li>
-      <a routerLink="/" routerLinkActive="active">Home</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
     </li>
     <li>
       <a routerLink="/taskboard" routerLinkActive="active">Taskboard</a>
@@ -19,4 +19,11 @@
       <a routerLink="/weather" routerLinkActive="active">Weather</a>
     </li>
   </ul>
+
+  <div class="github">
+    <a href="https://github.com/SafeguardPrvcy/candidate-test" target="_blank">
+      <fa-icon [icon]="faGithub"></fa-icon>
+      Github
+    </a>
+  </div>
 </header>

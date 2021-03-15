@@ -8,6 +8,7 @@ import {AppComponent} from './app.component';
 import {LayoutsModule} from './layouts/layouts.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SimpleListModule} from './components/simple-list/simple-list.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {SimpleListModule} from './components/simple-list/simple-list.module';
     LayoutsModule,
     BrowserAnimationsModule,
     DragulaModule.forRoot(),
+    FontAwesomeModule,
 
     SimpleListModule
   ],

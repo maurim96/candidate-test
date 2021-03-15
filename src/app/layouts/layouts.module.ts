@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import {FullWidthComponent} from './full-width/full-width.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import {FooterComponent} from './footer/footer.component';
   imports: [
     CommonModule,
     RouterModule,
+    FontAwesomeModule,
   ],
   exports: [
     FullWidthComponent,

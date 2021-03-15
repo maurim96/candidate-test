@@ -5,6 +5,16 @@
   padding: 0.4rem 1.4rem;
   display: flex;
   flex-direction: row;
+  align-items: center;
+
+  a {
+    color: #FFF;
+
+    &:hover,
+    &.active {
+      color: $sg-link;
+    }
+  }
 
   .logo {
     max-width: 20rem;
@@ -16,6 +26,7 @@
   }
 
   .menu-items {
+    flex: 1;
     display: inline-flex;
     list-style: none;
     padding: 0;
@@ -23,13 +34,9 @@
     align-items: center;
     gap: 1rem;
     font-size: 1.4rem;
+  }
 
-    a {
-      color: #FFF;
-
-      &:hover {
-        color: $sg-link;
-      }
-    }
+  .github {
+    font-size: 1.4rem;
   }
 }
