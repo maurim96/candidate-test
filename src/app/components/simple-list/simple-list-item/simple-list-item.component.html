@@ -1,0 +1,14 @@
+<ng-template #contentTemplate>
+  <h3>{{ title }}</h3>
+  <p><ng-content></ng-content></p>
+</ng-template>
+
+<li class="simple-list-item">
+  <a href="javascript:" [routerLink]="linkToPage" *ngIf="linkToPage">
+    <ng-container *ngTemplateOutlet="contentTemplate; context: {$implicit: false}"></ng-container>
+  </a>
+
+  <div *ngIf="!linkToPage">
+    <ng-container *ngTemplateOutlet="contentTemplate; context: {$implicit: false}"></ng-container>
+  </div>
+</li>

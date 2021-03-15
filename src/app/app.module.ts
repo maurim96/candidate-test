@@ -1,18 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {DragulaModule} from 'ng2-dragula';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {LayoutsModule} from './layouts/layouts.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {SimpleListModule} from './components/simple-list/simple-list.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FlexLayoutModule,
+    AppRoutingModule,
+    LayoutsModule,
+    BrowserAnimationsModule,
+    DragulaModule.forRoot(),
+
+    SimpleListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

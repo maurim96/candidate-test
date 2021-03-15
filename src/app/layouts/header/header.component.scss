@@ -1,0 +1,35 @@
+@import 'src/assets/scss/variables';
+
+.header {
+  background: $sg-primary-dark;
+  padding: 0.4rem 1.4rem;
+  display: flex;
+  flex-direction: row;
+
+  .logo {
+    max-width: 20rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .menu-items {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 2rem;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+
+    a {
+      color: #FFF;
+
+      &:hover {
+        color: $sg-link;
+      }
+    }
+  }
+}
