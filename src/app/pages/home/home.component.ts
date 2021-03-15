@@ -21,16 +21,22 @@ export class HomeComponent implements OnInit {
       content: 'The design of this website is very plain, update the styles to make this site your own.',
     },
     {
-      index: 3,
+      index: 2,
       title: 'Complete the Taskboard Logic',
       linkToPage: '\'/taskboard\'',
       content: 'Navigate to the taskboard page and complete the logic as described in this ticket.',
     },
     {
-      index: 3,
+      index: 4,
       title: 'Write a Notes Component',
       linkToPage: '/notes',
       content: 'We need to be able to capture notes about this site. Write a new component that will allow us to capture and view notes.',
+    },
+    {
+      index: 5,
+      title: 'Add Temperature to Header',
+      linkToPage: '/weather',
+      content: 'Use the openweathermap.org api to show the latest weather information for New York, New York.',
     },
   ];
 

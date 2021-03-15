@@ -13,6 +13,10 @@ const routes = [
   {
     path: 'notes',
     loadChildren: () => import('./pages/notes/notes.module').then(m => m.NotesModule)
+  },
+  {
+    path: 'weather',
+    loadChildren: () => import('./pages/weather/weather.module').then(m => m.WeatherModule)
   }
 ];
 
