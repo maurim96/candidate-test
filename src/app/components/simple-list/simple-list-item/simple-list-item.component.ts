@@ -7,7 +7,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SimpleListItemComponent implements OnInit {
   @Input() title: string;
-  @Input() linkToPage?: string;
+  @Input() linkTo?: string;
+  @Input() link?: string;
 
   constructor() { }
 
