@@ -35,9 +35,9 @@ export class BoardComponent implements OnInit, OnDestroy {
   }
 
   setData() {
-    ['ListItem 1.1', 'ListItem 1.2', 'ListItem 1.3'].map(t => this.list1.push({ title: t, theme: 'theme-1' }));
-    ['ListItem 2.1', 'ListItem 2.2', 'ListItem 2.3'].map(t => this.list2.push({ title: t, theme: 'theme-2' }));
-    ['ListItem 3.1', 'ListItem 3.2', 'ListItem 3.3'].map(t => this.list3.push({ title: t, theme: 'theme-3' }));
+    ['ListItem 1', 'ListItem 2', 'ListItem 3'].map(t => this.list1.push({ title: t, theme: 'theme-1' }));
+    ['ListItem 4', 'ListItem 5', 'ListItem 6'].map(t => this.list2.push({ title: t, theme: 'theme-2' }));
+    ['ListItem 7', 'ListItem 8', 'ListItem 9'].map(t => this.list3.push({ title: t, theme: 'theme-3' }));
   }
 
 }
