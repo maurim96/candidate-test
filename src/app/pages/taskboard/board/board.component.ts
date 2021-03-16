@@ -22,6 +22,9 @@ export class BoardComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.dragulaService.createGroup(this.list, {
       revertOnSpill: true,
+      accepts: (el, target, source, sibling) => {
+        return true;
+      }
     });
 
     this.setData();
