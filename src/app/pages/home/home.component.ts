@@ -48,6 +48,13 @@ export class HomeComponent implements OnInit {
       link: '/notes',
       content: 'We need to be able to capture notes about this site. Write a new component that will allow us to capture and view notes.',
     },
+    {
+      index: 6,
+      title: 'Commit Your Code After Each Task',
+      linkTo: 'routerLink',
+      link: '/notes',
+      content: 'After each task is complete, commit the code to your repo using the task\'s title as the commit message.',
+    },
   ];
 
   constructor() {
