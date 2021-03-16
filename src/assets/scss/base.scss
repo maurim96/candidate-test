@@ -1,7 +1,11 @@
 @import 'variables';
 
 .small-page {
-  width: 65%;
+  max-width: 1000px;
+  margin: 0 0 40px;
+}
+
+.block {
   margin: 0 0 40px;
 }
 

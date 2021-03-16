@@ -25,14 +25,14 @@ export class HomeComponent implements OnInit {
       index: 3,
       title: 'Improve the Design',
       linkTo: null,
-      content: 'The design of this website is very plain, update the styles to make this site your own.',
+      content: 'The design of this website is very plain, update the styles and/or design to make this site your own.',
     },
     {
       index: 4,
-      title: 'Add Temperature to Header',
+      title: 'Add Local Temperature to the Header',
       linkTo: 'routerLink',
       link: '/weather',
-      content: 'Use the openweathermap.org api to show the latest weather information for New York, New York.',
+      content: 'Use the openweathermap.org api to show the user\'s latest temperature information in the header.',
     },
     {
       index: 4,
