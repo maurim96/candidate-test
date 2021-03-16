@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
       index: 4,
       title: 'Add Temperature to Header',
       linkTo: 'routerLink',
-      link: '\'/weather\'',
+      link: '/weather',
       content: 'Use the openweathermap.org api to show the latest weather information for New York, New York.',
     },
     {
