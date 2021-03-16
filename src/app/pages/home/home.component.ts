@@ -51,8 +51,7 @@ export class HomeComponent implements OnInit {
     {
       index: 6,
       title: 'Commit Your Code After Each Task',
-      linkTo: 'routerLink',
-      link: '/notes',
+      linkTo: null,
       content: 'After each task is complete, commit the code to your repo using the task\'s title as the commit message.',
     },
   ];
