@@ -29,24 +29,24 @@ export class HomeComponent implements OnInit {
     },
     {
       index: 4,
-      title: 'Complete the Taskboard Logic',
-      linkTo: 'routerLink',
-      link: '/taskboard',
-      content: 'Navigate to the taskboard page and complete the logic as described in this ticket.',
-    },
-    {
-      index: 4,
-      title: 'Write a Notes Component',
-      linkTo: 'routerLink',
-      link: '/notes',
-      content: 'We need to be able to capture notes about this site. Write a new component that will allow us to capture and view notes.',
-    },
-    {
-      index: 5,
       title: 'Add Temperature to Header',
       linkTo: 'routerLink',
       link: '\'/weather\'',
       content: 'Use the openweathermap.org api to show the latest weather information for New York, New York.',
+    },
+    {
+      index: 4,
+      title: 'Complete the Taskboard Logic',
+      linkTo: 'routerLink',
+      link: '/taskboard',
+      content: 'Navigate to the taskboard page and complete the logic as described.',
+    },
+    {
+      index: 5,
+      title: 'Write a Notes Component',
+      linkTo: 'routerLink',
+      link: '/notes',
+      content: 'We need to be able to capture notes about this site. Write a new component that will allow us to capture and view notes.',
     },
   ];
 
