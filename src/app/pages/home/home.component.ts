@@ -17,13 +17,13 @@ export class HomeComponent implements OnInit {
     },
     {
       index: 2,
-      title: 'Fix the Issues on this Page',
+      title: 'Fix the Issues on the Homepage',
       linkTo: null,
       content: 'There are several problems with this page, find and fix the issues.',
     },
     {
       index: 3,
-      title: 'Improve this Basic Design',
+      title: 'Improve the Design',
       linkTo: null,
       content: 'The design of this website is very plain, update the styles to make this site your own.',
     },
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     },
     {
       index: 5,
-      title: 'Write a Notes Component',
+      title: 'Create a Notes Component',
       linkTo: 'routerLink',
       link: '/notes',
       content: 'We need to be able to capture notes about this site. Write a new component that will allow us to capture and view notes.',
