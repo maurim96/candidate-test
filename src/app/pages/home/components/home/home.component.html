@@ -6,8 +6,8 @@
   </div>
 
   <app-simple-list>
-    <app-simple-list-item *ngFor="let item of list"
-                          [title]="item.index + ': ' + item.title"
+    <app-simple-list-item *ngFor="let item of homeListItems"
+                          [title]="getFormattedTitle(item)"
                           [link]="item.link"
                           [linkTo]="item.linkTo">
 

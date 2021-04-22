@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { DragulaService } from 'ng2-dragula';
 
 import { BoardComponent } from './board.component';
 
@@ -8,7 +9,8 @@ describe('BoardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BoardComponent ]
+      declarations: [ BoardComponent ],
+      providers: [ DragulaService ]
     })
     .compileComponents();
   }));

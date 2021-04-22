@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {FullWidthComponent} from '../../layouts/full-width/full-width.component';
-import {HomeComponent} from './home.component';
+
+import { FullWidthComponent } from '../../layouts';
+import { HomeComponent } from './components';
 
 const fullWidthRoutes = [
   {
