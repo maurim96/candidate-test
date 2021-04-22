@@ -20,6 +20,14 @@
     </li>
   </ul>
 
+  <div *ngIf="weatherInfo$ | async as weatherInfo" class="weather-info">
+    <img src="assets/icons/{{weatherInfo['weather'][0]['icon'] || 'unknown'}}.png" alt="weather-icon" class="weather-img">
+    <div class="weather-info-text">
+      <p>{{ weatherInfo.main.temp | number: '1.0-0' }}°F</p>
+      <p title="{{weatherInfo.name}}">{{ weatherInfo.name }}</p>
+    </div>
+  </div>
+
   <div class="github">
     <a href="https://github.com/SafeguardPrvcy/candidate-test" target="_blank">
       <fa-icon [icon]="faGithub"></fa-icon>

@@ -9,6 +9,8 @@ import {LayoutsModule} from './layouts/layouts.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SimpleListModule} from './components/simple-list/simple-list.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DataLayerModule } from './data-layer/data-layer.module';
+import { WeatherService } from './core/services';
 
 @NgModule({
   declarations: [
@@ -22,10 +24,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserAnimationsModule,
     DragulaModule.forRoot(),
     FontAwesomeModule,
-
+    DataLayerModule.forRoot(),
     SimpleListModule
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

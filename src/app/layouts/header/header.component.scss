@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
 
   a {
     color: inherit;
@@ -77,6 +77,37 @@
   .github {
     font-size: 1.4rem;
     color: white;
+  }
+
+  .weather-info {
+    width: 13rem;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 2rem;
+
+    .weather-img {
+      width: 4rem;
+      height: 4rem;
+    }
+    .weather-info-text {
+      width: 7rem;
+      text-align: center;
+
+      p {
+        margin: 0;
+        padding: .2rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      p:nth-child(1) {
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+    }
   }
 }
 
