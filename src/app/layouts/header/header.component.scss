@@ -2,15 +2,17 @@
 
 .header {
   background: $sg-primary-dark;
-  padding: 0.4rem 1.4rem;
+  padding: 0.4rem 1.4rem 0rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 4rem;
 
   a {
-    color: #FFF;
+    color: inherit;
+    padding: 0 1rem 0;
+    z-index: 1;
 
-    &:hover,
     &.active {
       color: $sg-link;
     }
@@ -34,9 +36,52 @@
     align-items: center;
     gap: 1rem;
     font-size: 1.4rem;
+    height: 100%;
+
+    li {
+      height: 100%;
+      display: flex;
+      align-items: inherit;
+      color: white;
+      position: relative;
+
+      &:hover,
+      &.active {
+        color: $sg-link;
+        transition: .3s;
+        transition-delay: .1s;
+      }
+
+      &:before {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        content: "";
+        transform: scaleX(0);
+        height: 3%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        transition: transform 0.1s, height 0.2s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.1s;
+      }
+
+      &:hover::before,
+      &:active::before {
+          transform: scaleX(1);
+          height: 100%;
+          background-color: $sg-light-grey;
+      }
+    }
   }
 
   .github {
     font-size: 1.4rem;
+    color: white;
   }
+}
+
+.li-active {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: $sg-light-grey;
 }

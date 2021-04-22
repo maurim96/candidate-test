@@ -2,16 +2,24 @@
 
 .simple-list-item {
   background: $sg-grey;
-  border-left: 3px solid $sg-grey-dark;
+  border-left: 0.5rem solid $sg-primary-dark;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition:  all .4s;
   margin-bottom: 2rem;
-  padding: 0.5rem 0 0.5rem 1.5rem;
+  padding: 2rem;
 
   h3 {
     margin: 0 0 0.5rem;
+    transform: translateY(10px);
+    transition: all .4s;
   }
 
   p {
     margin: 0;
+    visibility: hidden;
+    transition: all .2s;
+    transform: translateY(-10px);
   }
 
   a {
@@ -20,12 +28,20 @@
     h3 {
       color: $sg-primary;
     }
+  }
 
-    &:hover {
+  &:hover {
+    border-left: 1.5rem solid $sg-primary;
 
-      h3 {
-        color: $sg-primary-dark;
-      }
+    p {
+      margin-top: 0.2rem;
+      visibility: visible;
+      transform: translateY(0px)
+    }
+
+    h3 {
+      color: $sg-primary-dark;
+      transform: translateY(0);
     }
   }
 }

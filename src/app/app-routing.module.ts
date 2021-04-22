@@ -17,6 +17,10 @@ const routes = [
   {
     path: 'weather',
     loadChildren: () => import('./pages/weather/weather.module').then(m => m.WeatherModule)
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 
