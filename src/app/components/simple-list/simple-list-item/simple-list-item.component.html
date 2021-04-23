@@ -4,6 +4,10 @@
 </ng-template>
 
 <li class="simple-list-item">
+  <div class="remove-item" *ngIf="idToDelete" (click)="executeDelete()">
+    X
+  </div>
+
   <a [href]="link" target="_blank" *ngIf="linkTo === 'url'">
     <ng-container *ngTemplateOutlet="contentTemplate; context: {$implicit: false}"></ng-container>
   </a>

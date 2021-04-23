@@ -1,0 +1,32 @@
+@import 'src/assets/scss/variables';
+
+.notes-container {
+  display: flex;
+
+  form {
+    flex: 1;
+    margin-right: 3rem;
+    height: fit-content;
+
+    div label:after {
+      content: '*';
+      color: $sg-danger;
+    }
+
+    div span {
+      color: $sg-danger;
+      font-size: 1rem;
+      margin-top: .3rem;
+      margin-left: .2rem;
+    }
+  }
+
+  div {
+    flex: 2;
+
+    h2 {
+      margin-top: 0;
+      color: $sg-primary-dark;
+    }
+  }
+}

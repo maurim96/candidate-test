@@ -4,3 +4,38 @@
     Bonus points for extra features or out of the box creativity.</p>
   <p>You do not need a backend to save the data, save to the NotesService only.</p>
 </div>
+<!-- TODO: create separate component for form in order to do it reusable. Also, implement reusable way to display form error messages -->
+<div class="notes-container">
+  <form [formGroup]="noteForm" class="form-group">
+    <h2>Create a Note</h2>
+    <div>
+      <label>Title</label>
+      <input type="text" formControlName="title">
+      <span *ngIf="title?.errors?.required && title?.touched">Title is required.</span>
+    </div>
+
+    <div>
+      <label>Content</label>
+      <textarea type="text" formControlName="content" rows="6"></textarea>
+      <span *ngIf="content?.errors?.required && content?.touched">Content is required.</span>
+      <span *ngIf="content?.errors?.maxlength && content?.touched">Max length is 120.</span>
+    </div>
+
+    <div>
+      <button [disabled]="noteForm.invalid" (click)="createNote()" maxlength="'120'">Create</button>
+    </div>
+  </form>
+
+  <div>
+    <h2>Notes</h2>
+    <app-simple-list>
+      <app-simple-list-item *ngFor="let note of notes"
+                            [title]="note.title"
+                            [idToDelete]="note.id"
+                            (deleteEmitter)="deleteNote($event)">
+
+        {{ note.content }}
+      </app-simple-list-item>
+    </app-simple-list>
+  </div>
+</div>

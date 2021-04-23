@@ -11,12 +11,14 @@ import {SimpleListModule} from './components/simple-list/simple-list.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DataLayerModule } from './data-layer/data-layer.module';
 import { WeatherService } from './core/services';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     FlexLayoutModule,
     AppRoutingModule,
