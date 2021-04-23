@@ -10,9 +10,10 @@ import {BoardItem} from '../board-item/board-item';
 export class BoardComponent implements OnInit, OnDestroy {
   list = 'board';
 
-  list1: BoardItem[] = [];
-  list2: BoardItem[] = [];
-  list3: BoardItem[] = [];
+  todoList: BoardItem[] = [];
+  inProgressList: BoardItem[] = [];
+  doneList: BoardItem[] = [];
+  availableMoves: { [key: string]: string[] };
 
   constructor(
     private dragulaService: DragulaService
@@ -20,10 +21,15 @@ export class BoardComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
+    this.availableMoves = {
+      'todoList': [ 'inProgressList' ],
+      'inProgressList': [ 'todoList', 'doneList' ],
+      'doneList': [ 'inProgressList' ],
+    };
     this.dragulaService.createGroup(this.list, {
       revertOnSpill: true,
       accepts: (el, target, source, sibling) => {
-        return true;
+        return this.availableMoves[source.id].includes(target.id);
       }
     });
 
@@ -35,9 +41,9 @@ export class BoardComponent implements OnInit, OnDestroy {
   }
 
   setData() {
-    ['ListItem 1', 'ListItem 2', 'ListItem 3'].map(t => this.list1.push({ title: t, theme: 'theme-1' }));
-    ['ListItem 4', 'ListItem 5', 'ListItem 6'].map(t => this.list2.push({ title: t, theme: 'theme-2' }));
-    ['ListItem 7', 'ListItem 8', 'ListItem 9'].map(t => this.list3.push({ title: t, theme: 'theme-3' }));
+    ['Task 1', 'Task 2', 'Task 3'].map(t => this.todoList.push({ title: t, theme: 'todo-theme' }));
+    ['Task 4', 'Task 5', 'Task 6'].map(t => this.inProgressList.push({ title: t, theme: 'in-progress-theme' }));
+    ['Task 7', 'Task 8', 'Task 9'].map(t => this.doneList.push({ title: t, theme: 'done-theme' }));
   }
 
 }

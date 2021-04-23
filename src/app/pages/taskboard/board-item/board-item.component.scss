@@ -6,15 +6,15 @@
   margin: 0 0 1rem;
   background: $sg-grey;
 
-  &.theme-1 {
+  &.todo-theme {
     background-color: $sg-danger;
   }
 
-  &.theme-2 {
+  &.in-progress-theme {
     background-color: $sg-warning;
   }
 
-  &.theme-3 {
+  &.done-theme {
     background-color: $sg-success;
   }
 }

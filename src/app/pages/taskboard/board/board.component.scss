@@ -15,17 +15,17 @@
 .list-title {
   margin: 0;
 
-  &.title-1 {
+  &.todo-title {
     grid-column: 1;
     grid-row: 2;
   }
 
-  &.title-2 {
+  &.in-progress-title {
     grid-column: 2;
     grid-row: 2;
   }
 
-  &.title-3 {
+  &.done-title {
     grid-column: 3;
     grid-row: 2;
   }
@@ -35,17 +35,17 @@
   padding: 1.4rem;
   background: $sg-grey;
 
-  &.list-1 {
+  &.todo-list {
     grid-column: 1;
     grid-row: 3;
   }
 
-  &.list-2 {
+  &.in-progress-list {
     grid-column: 2;
     grid-row: 3;
   }
 
-  &.list-3 {
+  &.done-list {
     grid-column: 3;
     grid-row: 3;
   }
